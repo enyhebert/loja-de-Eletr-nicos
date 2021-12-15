@@ -1,0 +1,233 @@
+/*Global (reset, corpo da pagina, estilo padrão para parágrafos, listas, etc.)
+Cabeçalho da página
+Estrutura da página
+Rodapé
+Estilos de títulos
+Estilos de texto
+Navegação
+Formulários
+Extras ou Miscelâneas*/
+
+
+
+
+@keyframes animacao {
+    fron{height: 300px;}
+    to{height: 400px;}
+}
+
+/* ---------->>> Cabeçario da Pagina <<<-----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    float: left;
+    padding: 0px;
+    width: 87%;
+}
+
+header nav{
+    background-color: black;
+    padding: 10px 0;
+    height: 80px;
+}
+
+header nav .logo a li{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header nav .menu ul li a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header .hero #formSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+header nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .hero #formSearch input{
+    width:  70vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, .3);
+    text-align: center;
+}
+
+main{
+    margin: 20px 0px;
+}
+
+main .container h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* -----------------------------------------------*/
+
+
+
+/* ---------->>> Textos(Geral) <<<-----------*/
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: aliceblue;
+}
+
+.criadores{
+    font-family: fantasy;
+}
+/* ------------------------------------------*/
+
+
+
+/* ---------->>> Produtos <<<-----------*/
+
+main .container .PRODUTO{
+    display: inline-block;
+    flex-direction: column;
+}
+
+.PRODUTO{
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, .3);
+}
+
+.PRODUTO:hover {
+   background-color: red;
+
+}
+
+.PRODUTO img {
+    border-radius: 5px 5px 0 px 0 px;
+    margin-bottom: 10px;
+}
+
+.PRODUTO h4{
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+
+}
+
+.PRODUTO p {
+padding:0px 20px;
+font-size: 1.2rem;
+}
+
+.PRODUTO button {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, .3);
+    text-transform: uppercase;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgb(0, 0, .3);
+    transition: 0.3  ease;
+}
+/* -------------------------------------*/
+
+footer{
+    padding: 10px 0px;
+}
+
+footer .container p{
+    text-align: center;
+    font-weight: bold;
+}
+.hero-sobre.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:600px){
+    min .container .PRODUTO{
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+main .container .PRODUTO .produtos{
+    width: 400px;
+}
+}
+/* modal */
+.modal {
+  position: fixed;
+  width: 70%;
+  top: 25%;
+  left: 15%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(0, 0, .3);
+}
+/*form*/
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-control{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, .3);
+    background: #fff;
+    box-shadow: 1px 1px 3px rgb(0, 0, .3);
+
+}
+.bnt{
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, .3);
+    cursor: pointer;
+}
+.bnt:hover{
+    opacity: 0.05;
+}
+.bnt-success{
+    background: green;
+    color: #fff;
+}
+.bnt-danger{
+    background: red;
+    color: #fff;
+}
+/*utius*/
+.hide{
+    display: none;
+   
+}
+.container{
+    width: 90vw;
+    margin: 0px auto;
+}
+

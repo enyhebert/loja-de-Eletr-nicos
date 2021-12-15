@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=480"/>
+    <title>trabalho</title>
+    <link rel="stylesheet" href="css/loja.css">
+</head>
+<body>
+   <header>
+        <nav>
+            <div class="container">
+                <a href="index.html"class="logo">
+                    <img src="img/byte.jpg"/>
+
+                    <li><a href="https://www.instagram.com/byte__informatica/"><img src="./img/logo-instagram.jpg"></a></li> 
+                    <li><a href="https://wa.me/553388925325"><img src="./img/logo-whatsapp.jpg"></a></li>
+                    <li><a href="sobre.html"><img src="./img/logo-sobre.png"></a></li>
+                </a>
+                <div class="menu"></div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch">
+                    <input type="search" placeholder="OQUE DESEJA COMPRAR?" name="inputSearch" id="inputSearch">
+                </form>
+            </div>
+
+        </section>
+
+   </header>
+   <main>
+<div class="container">
+    <h3>PRODUTOS</h3>
+    <section class="produtos" id="product-div"></section>
+</div>
+<div class="modal hide">
+     <form action='#' id="product-div">
+         <div class="form-group">
+             <label for="title">Produto</label>
+             <input type="text" name="title" id="title" class="form-control" placeholder="ex. produto 01">
+         </div>
+         <div class="form-group">
+            <label for="quantity">Quantidade</label>
+            <input type="number" name="quantity" id="quantity" class="form-control" placeholder="ex. 1"min="1">
+        </div>
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="ex. ENYHEBERT">
+        </div>
+        <div class="form-group">
+            <label for="address">Endereço</label>
+            <input type="text" name="address" id="address" class="form-control" placeholder="ex. RUA ANA SANTOS CARVALHO N:161">
+        </div>
+        <div class="form-group">
+            <label for="payment">pagamento</label>
+           <select name="payment" id="payment" class="form-control">
+           <option value=" dinheiro">dinheiro</option>
+           <option value=" cartao">cartao de credito</option>
+        </select>
+    </form>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="bnt bnt-success"onclick="checkout('553399351930')">Finalizar pedido</button>
+            <button type="button" class="bnt bnt-danger"onclick="modalTrigger()">Cancelar</button>
+        </div>
+</div>
+   </main>
+<footer>
+    <div class="container">
+        <p class="criadores">CRIADORES DO SITE: ENYHEBERT E JOÃO VITOR</p>
+    </div>
+</footer>
+<script src="javascript/code.js"></script>
+
+</body>
+</html>
